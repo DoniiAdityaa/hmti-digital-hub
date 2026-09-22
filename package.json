@@ -1,0 +1,22 @@
+{
+  "name": "hmti_tugas",
+  "version": "1.0.0",
+  "description": "HMTI Student Information Center - Penugasan IPTEK HMTI",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/css/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/css/output.css --minify"
+  },
+  "keywords": [
+    "hmti",
+    "udinus",
+    "tailwind",
+    "javascript"
+  ],
+  "author": "Doni Aditya Pratama",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}
