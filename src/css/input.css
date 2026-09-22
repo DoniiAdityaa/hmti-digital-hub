@@ -45,3 +45,43 @@ html {
 .dark ::-webkit-scrollbar-thumb {
   background: #334155;
 }
+
+/* ==========================================================================
+   ACTIVE NAV LINK UNDERLINE INDICATOR (Garis Bawah Aktif)
+   ========================================================================== */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 75%;
+  height: 2.5px;
+  background-color: #2563eb;
+  border-radius: 9999px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+}
+
+.dark .nav-link::after {
+  background-color: #38bdf8;
+}
+
+/* Garis bawah muncul saat di-hover atau aktif */
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.nav-link.active {
+  color: #2563eb !important;
+  font-weight: 700 !important;
+}
+
+.dark .nav-link.active {
+  color: #38bdf8 !important;
+}
