@@ -39,9 +39,9 @@ const listArtikel = [
         id: 1,
         judul: "HMTI Udinus Wadahi Karya dan Ajak Developer Muda Terus Berinovasi lewat Hi-Technology 2025",
         kategori: "Event IT",
-        penulis: "Humas Udinus",
+        penulis: "-",
         tanggal: "14 Mei 2025",
-        waktuBaca: "4 menit baca",
+
         ringkasan: "HMTI Universitas Dian Nuswantoro menggelar event tahunan Hi-Technology 2025 untuk mewadahi inovasi software, hardware IoT, dan game karya mahasiswa.",
         konten: `
       <p class="mb-3">Perkembangan teknologi yang pesat mendorong lahirnya para developer untuk berlomba-lomba menciptakan inovasi teknologi yang berkualitas. Hadir untuk mewadahi karya inovasi mahasiswa, Himpunan Mahasiswa Teknik Informatika (HMTI) Universitas Dian Nuswantoro (Udinus) menggelar event ‘Hi-Technology 2025’.</p>
@@ -56,9 +56,8 @@ const listArtikel = [
         id: 2,
         judul: "Artikel Ilmiah Mahasiswa Teknik Informatika Udinus Berhasil Tembus Jurnal Internasional Scopus",
         kategori: "Prestasi & Riset",
-        penulis: "Humas Udinus",
+        penulis: "-",
         tanggal: "15 Mei 2025",
-        waktuBaca: "5 menit baca",
         ringkasan: "Enam mahasiswa Program Sarjana Teknik Informatika Udinus mengukir prestasi internasional dengan memublikasikan artikel ilmiah terindeks Scopus Q1 dan Q4 di bidang Machine Learning & Quantum Computing.",
         konten: `
       <p class="mb-3">Enam mahasiswa dari Program Sarjana Teknik Informatika Universitas Dian Nuswantoro (Udinus) mengukir prestasi baru di kancah internasional. Mereka berhasil memublikasikan tiga artikel ilmiah dalam jurnal internasional bereputasi yang terindeks Scopus Q1 dan Q4.</p>

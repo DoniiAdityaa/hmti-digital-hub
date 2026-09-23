@@ -18,8 +18,8 @@ function initFilterApp() {
     const filteredData = listKegiatan.filter(item => {
       const matchCategory = currentCategory === 'all' || item.kategori === currentCategory;
       const matchSearch = item.nama.toLowerCase().includes(currentSearchQuery.toLowerCase()) ||
-                          item.deskripsi.toLowerCase().includes(currentSearchQuery.toLowerCase()) ||
-                          item.lokasi.toLowerCase().includes(currentSearchQuery.toLowerCase());
+        item.deskripsi.toLowerCase().includes(currentSearchQuery.toLowerCase()) ||
+        item.lokasi.toLowerCase().includes(currentSearchQuery.toLowerCase());
       return matchCategory && matchSearch;
     });
 
@@ -66,14 +66,7 @@ function initFilterApp() {
             </p>
           </div>
 
-          <div class="pt-4 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between">
-            <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400">
-              <i class="fa-solid fa-user-group text-xs mr-1"></i> ${item.kuota}
-            </span>
-            <a href="#kontak" class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-700 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
-              Daftar Acara
-            </a>
-          </div>
+      
         </div>
       </div>
     `).join('');
@@ -115,8 +108,8 @@ function initFilterApp() {
         <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
           <div>
             <div class="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 mb-2">
-              <span><i class="fa-regular fa-clock mr-1"></i> ${item.waktuBaca}</span>
-              <span>${item.tanggal}</span>
+              <span><i class="fa-regular fa-pen-to-square mr-1"></i> ${item.penulis}</span>
+              <span><i class="fa-regular fa-calendar mr-1"></i> ${item.tanggal}</span>
             </div>
             <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors mb-2 line-clamp-2">
               ${item.judul}
@@ -142,7 +135,7 @@ document.addEventListener('componentsLoaded', initFilterApp);
 document.addEventListener('DOMContentLoaded', initFilterApp);
 
 // Modal Reader Function
-window.openArtikelModal = function(id) {
+window.openArtikelModal = function (id) {
   const item = listArtikel.find(a => a.id === id);
   if (!item) return;
 
@@ -153,7 +146,7 @@ window.openArtikelModal = function(id) {
 
   if (modal && modalTitle && modalMeta && modalBody) {
     modalTitle.textContent = item.judul;
-    modalMeta.textContent = `${item.penulis} • ${item.tanggal} • ${item.waktuBaca}`;
+    modalMeta.textContent = `${item.penulis} • ${item.tanggal}`;
     modalBody.innerHTML = `
       <img src="${item.gambar}" alt="${item.judul}" class="w-full h-56 object-cover rounded-2xl mb-4">
       <div class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">${item.konten}</div>
@@ -163,7 +156,7 @@ window.openArtikelModal = function(id) {
   }
 };
 
-window.closeArtikelModal = function() {
+window.closeArtikelModal = function () {
   const modal = document.getElementById('artikelModal');
   if (modal) {
     modal.classList.add('hidden');
