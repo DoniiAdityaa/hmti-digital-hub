@@ -1,7 +1,6 @@
-/* ==========================================================================
-   HMTI DIGITAL HUB - FILTER & RENDER SCRIPT
-   Logic: Live Search, Category Filter for Events, & Dynamic Articles
-   ========================================================================== */
+
+//  HMTI DIGITAL HUB - FILTER & RENDER SCRIPT
+//  Logic: Live Search, Category Filter for Events, & Dynamic Articles
 
 function initFilterApp() {
   const kegiatanContainer = document.getElementById('kegiatanContainer');

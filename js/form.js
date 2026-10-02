@@ -1,7 +1,6 @@
-/* ==========================================================================
-   HMTI DIGITAL HUB - FORM VALIDATION SCRIPT
-   Logic: Client-side Input Validation & Feedback Toast Modal
-   ========================================================================== */
+
+// //  HMTI DIGITAL HUB - FORM VALIDATION SCRIPT
+//  Logic: Client-side Input Validation & Feedback Toast Modal
 
 function initFormApp() {
   const oprecForm = document.getElementById('oprecForm');
@@ -66,7 +65,7 @@ function initFormApp() {
 
     if (isValid) {
       const acaraNama = acaraSelect ? acaraSelect.options[acaraSelect.selectedIndex].text : 'Kegiatan HMTI';
-      
+
       if (toastMessage) {
         toastMessage.innerHTML = `Selamat <strong>${namaInput.value}</strong>! Pendaftaran kamu untuk <strong>${acaraNama}</strong> berhasil dikirim. Panitia akan menghubungimu via WhatsApp.`;
       }
@@ -85,7 +84,7 @@ function initFormApp() {
 document.addEventListener('componentsLoaded', initFormApp);
 document.addEventListener('DOMContentLoaded', initFormApp);
 
-window.closeToast = function() {
+window.closeToast = function () {
   const toastSuccess = document.getElementById('toastSuccess');
   if (toastSuccess) {
     toastSuccess.classList.add('hidden');

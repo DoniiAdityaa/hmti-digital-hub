@@ -1,7 +1,7 @@
-/* ==========================================================================
-   HMTI DIGITAL HUB - MAIN JAVASCRIPT
-   Logic: Dark Mode Switcher, Mobile Drawer Toggle, Scroll Morphing, & ScrollSpy Active Link
-   ========================================================================== */
+
+//    HMTI DIGITAL HUB - MAIN JAVASCRIPT
+//    Logic: Dark Mode Switcher, Mobile Drawer Toggle, Scroll Morphing, & ScrollSpy Active Link
+
 
 function initMainApp() {
     // 1. Dark Mode Switcher Logic

@@ -1,8 +1,4 @@
-/* ==========================================================================
-   DATA KEGIATAN & ARTIKEL HMTI (DATA STORE)
-   ========================================================================== */
-
-// Data Kegiatan HMTI UDINUS
+//    DATA KEGIATAN & ARTIKEL HMTI (DATA STORE)
 const listKegiatan = [
     {
         id: 1,
